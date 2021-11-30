@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+	<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+    <meta charset="utf-8">
+	<link rel="manifest" href="manifest.json">
+    <title>Tic Tac Toe</title>
+    
+    <!-- include an external style sheet -->
+    <link rel="stylesheet" href="tictactoe.css">  
+
+    <!-- include an external JavaScript file -->
+    <script src="tictactoe.js"></script>
+
+  </head>
+  
+  <body>
+    
+    <h1 class="titletext">Tic Tac Toe</h1>
+    <h3 id="gameMessage" class="titletext"></h3>
+    <div id="main">
+        <div id="one" class="box" onclick="playerTakeTurn(this)"></div>
+        <div id="two" class="box" onclick="playerTakeTurn(this)"></div>
+        <div id="three" class="box" onclick="playerTakeTurn(this)"></div>
+        <br>
+        <div id="four" class="box" onclick="playerTakeTurn(this)"></div>
+        <div id="five" class="box" onclick="playerTakeTurn(this)"></div>
+        <div id="six" class="box" onclick="playerTakeTurn(this)"></div>
+         <br>
+        <div id="seven" class="box" onclick="playerTakeTurn(this)"></div>
+        <div id="eight" class="box" onclick="playerTakeTurn(this)"></div>
+        <div id="nine" class="box" onclick="playerTakeTurn(this)"></div>   
+    </div>
+    
+    <div id="controls" class="hidden">
+      <!-- <button id="newbutton" onclick="newGame()">Start New Game</button>-->
+    </div>
+    
+    
+    
+    <div id="lightbox" class="hidden"></div>
+    
+    <div id="positionMessage">
+       <div id="boundaryMessage" class="hidden">
+          <img id="x" src="x.png" alt="close" onclick="continueGame()">
+          <h1 class="titletext" id="message"></h1>
+          <!--<p class="titletext" id="message2"></p>-->
+       
+       </div>
+    </div>
+    
+   
+  </body>
+  
+</html>

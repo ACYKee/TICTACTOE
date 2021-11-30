@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+.box {
+  height: 175px;
+  width: 175px;
+  background-color:#111;
+  display:inline-block;
+  margin:10px;
+  vertical-align:top;
+  text-align:center;
+  line-height:175px;
+  font-size:100px;  
+}
+
+
+.titletext {
+  text-align:center;
+  color:#6495ED;
+}
+
+h1.titletext {font-size:3em} 
+h3.titletext {font-size:2em} 
+p.titletext{font-size:2em;}  
+
+
+#main {
+  position:relative;
+  margin-left: auto;
+  margin-right:auto;
+  height:585px;
+  width:595px;
+  background-color:#6495ED;  
+  padding:10px;
+
+}
+body {
+  background-color:#111; 
+  color:white;
+  font-family: 'Righteous', Arial, cursive; 
+}
+
+/* Light Box CSS */
+.hidden {
+   display:none;
+}
+
+.unhidden {
+  display:block;
+}
+
+
+#lightbox {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.4);
+}
+
+
+#x {
+  position:absolute;
+  top:10px;
+  right:10px;
+  width:30px;
+  height:30px;
+  z-index:2; 
+}
+
+#positionMessage{
+  position:absolute;
+  top:45px;
+  left:0px;
+  width:100%;
+}
+
+#boundaryMessage{
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+  width:600px;
+  height:200px;
+  background-color:rgba(255,255,255,0.9);
+  z-index:1;
+  padding:30px;
+  border:thick solid #6495ED;
+  
+}
+
+#controls {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%; 
+}
+
+#newbutton {
+  position:absolute;
+  top:15px;
+  right:15px;
+  height:40px;
+  width:100px;
+  background-color:#cd4dcc;
+  color:#6495ED;
+}
+
